@@ -1,26 +1,37 @@
+
+html{
+  background: url('http://www.jpl.nasa.gov/spaceimages/images/largesize/PIA20679_hires.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main{
+background-position: center;
+background-color: #434B4C;
+opacity: 0.5;
+}
+div{
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  color: #D1CAC1;
+}
+
 header{
   font-weight: bold;
-  color: #777799;
-  background-color: orange;
+  color: #D1CAC1;
+  background-color: #987E68;
   text-align: center;
+  opacity: 0.5;
+
 }
 footer{
   font-weight: bold;
-  color: #777799;
-  background-color: orange;
+  color: #4C4743;
+  background-color: #987E68;
   text-align: center;
-
+  opacity: 0.5;
 }
-main{
-background-position: center;
-background-color: #f0e68c;
-}
-p{
-  font-size: 180px;
-  font-weight: bold;
-  padding-bottom: 20px;
-  text-align: center;
-}
-body{
-  background-image: image('http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg');
+h1{
+	color:#494542;
 }
