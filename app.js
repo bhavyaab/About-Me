@@ -14,6 +14,7 @@ if(user.toUpperCase === 'Y' || user === 'y' || user.toUpperCase === 'YES' || use
   if(isNaN(num)){                             // error catcher if user input a valu which is not a number.
     alert('Input is not a number');
     num = prompt('What is the maximum number I can guess for you?');
+    count++;
   }else{
     num = parseInt(num);
     console.log('number is: ', num);
@@ -24,25 +25,38 @@ if(user.toUpperCase === 'Y' || user === 'y' || user.toUpperCase === 'YES' || use
 
     if(randomnumber != guessedNum){
       alert('Sorry Number is ' + randomnumber + ' !!');
-      }else if (randomnumber === guessedNum){
-        alert('Yeee you are BOND of nuber guessing game!! good job!');
-       };
+    }else if (randomnumber === guessedNum){
+      alert('Yeee you are BOND of nuber guessing game!! good job!');
     };
+  };
 } else if (user.toUpperCase === 'N' || user === 'n' || user.toUpperCase === 'NO' || user === 'no')
    {
-     alert('Let me know when you are interested to play.. see you soon!!');     //'for' and 'while' structures for your sixth and seventh questions
-     }else{
-     alert('Not a defined input!!');
-     };
+  alert('Let me know when you are interested to play.. see you soon!!');     //'for' and 'while' structures for your sixth and seventh questions
+}else{
+  alert('Not a defined input!!');
+  count++;
+};
 
-var counter;
-
+var counter = false;
+var i = 0;
 for(i = 0; i < 4; i++) {
-var places[i] = prompt('Name your three faviorite vacation places!');
-console.log(places[i]);
+  var places = new Array ();
+  places[i] = prompt('Name some of your faviorite vacation places!');
+  if(!isNaN(parseInt(places[i])) || null){                             // error catcher if user input a valu which is not string.
+    alert('Input is not valid!!');
+    places[i] = prompt('What is your faviorite vacation place?');
+    count++;
+  }else{
+    console.log(places[i]);
+  }
 };
 
 while(!counter){
-  prompt(places[Math.floor((Math.random() * 4) + 1)] + ' is also my faviorite place!!')
+  if(places[Math.floor((Math.random() * 3) + 1)] != undefine){
+    count++;
+    console.log('undefined charcter ');
+  };
+  alert(places[Math.floor((Math.random() * 3) + 1)] + ' is this a place that exist!!');
   counter = true;
 };
+console.log('total error count = ', count);
