@@ -4,23 +4,26 @@ header{
   background-color: orange;
   text-align: center;
 }
-footer{
+
+ footer{
   font-weight: bold;
   color: #777799;
   background-color: orange;
   text-align: center;
+ }
 
-}
-main{
-background-position: center;
-background-color: #f0e68c;
-}
-p{
+ main{
+ background-position: center;
+ background-color: #f0e68c;
+ }
+
+ p{
   font-size: 180px;
   font-weight: bold;
   padding-bottom: 20px;
   text-align: center;
-}
-body{
+ }
+
+ body{
   background-image: image('http://www.planwallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg');
-}
+ }
