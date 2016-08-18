@@ -1,15 +1,22 @@
 'use strict';
 var count = 0;
-
-var user = prompt('Hello there!! Would you like to play a game today?');
-console.log('Are you going to play the game ', +user);
-count++;
+var user;
+function playGame() {                                  //first function
+  user = prompt('Hello there!! Would you like to play a game today?');
+  console.log('Are you going to play the game ', +user);
+  count++;
+};
+playGame();                               //first function called
 
 if(user.toUpperCase === 'Y' || user === 'y' || user.toUpperCase === 'YES' || user === 'yes')
 {
   alert('let\'s play a guessing game!');
-  var num = prompt('It is a number guessing game! Tell me a maximum no I can guess for you!');  //User input number
-  console.log('Guessed number = ', num);
+  var num;
+  function secondQuestion () {                //2nd function
+    num = prompt('It is a number guessing game! Tell me a maximum no I can guess for you!');  //User input number
+    console.log('Guessed number = ', num);
+  };
+  secondQuestion();          //2nd function called
 
   if(isNaN(num)){                             // error catcher if user input a valu which is not a number.
     alert('Input is not a number');
@@ -52,7 +59,7 @@ for(i = 0; i < 4; i++) {
 };
 
 while(!counter){
-  if(places[Math.floor((Math.random() * 3) + 1)] != undefine){
+  if(places[Math.floor((Math.random() * 3) + 1)] != undefined) {
     count++;
     console.log('undefined charcter ');
   };
